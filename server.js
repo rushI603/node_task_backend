@@ -1,9 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const PORT = process.env.PORT || 5500;
 const app = express();
 /************ MIDDLEVARES *************/
 
 // Body parser middleware
+app.use(cors({origin: "https://getapi.onrender.com/"}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
