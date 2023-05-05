@@ -5,7 +5,7 @@ const app = express();
 /************ MIDDLEVARES *************/
 
 // Body parser middleware
-app.use(cors({origin: "https://getapi.onrender.com/"}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
